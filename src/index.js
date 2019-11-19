@@ -8,7 +8,7 @@ module.exports = app => {
    * @param String name - the name of the module
    * @param Function handler - a module handler
    */
-  app.registerModule = (name: string, handler: Function) => {
+  app.registerModule = (name, handler) => {
     if (!name) {
       throw new Error('Invalid app module. Handler name is missed');
     }
@@ -24,7 +24,7 @@ module.exports = app => {
    * Get module's handler
    * @param String name - the name of the module
    */
-  app.module = (name: string) => {
+  app.module = name => {
     if (!app.modules.has(name)) {
       throw new TypeError(`Undefined module by the name: ${name}`);
     }
