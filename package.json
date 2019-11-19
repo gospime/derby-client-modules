@@ -1,0 +1,36 @@
+{
+  "name": "@gospime/derby-client-modules",
+  "version": "1.0.0",
+  "description": "Conveniently adding and registering modules for Derby client application",
+  "keywords": [
+    "gospime",
+    "derby",
+    "derbyjs",
+    "module"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && npm audit fix",
+    "up": "npm update",
+    "check": "npm outdated",
+    "upgrade": "npm run up && npm run check && npm run build",
+    "push-version": "standard-version",
+    "ls-g": "npm list -g --depth=0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gospime/derby-client-modules.git"
+  },
+  "author": "Oleg Kravchuk <oleg.kravchuk@gospime.com> (https://gospime.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gospime/derby-client-modules/issues"
+  },
+  "homepage": "https://github.com/gospime/derby-client-modules#readme",
+  "devDependencies": {
+    "standard-version": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
